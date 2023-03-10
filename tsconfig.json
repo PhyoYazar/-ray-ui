@@ -28,6 +28,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
+      "~/*": ["./src/*"],
       "lib": ["src/lib.ts"]
     }
   },
