@@ -5,9 +5,9 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // optimizeDeps: {
-  //   include: ["react/jsx-runtime"],
-  // },
+  optimizeDeps: {
+    include: ["react/jsx-runtime"],
+  },
   plugins: [
     react(),
     dts({
@@ -25,7 +25,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src", "lib.ts"),
-      name: "@ray-j/ui",
+      name: "ray-joe",
       formats: ["es", "umd"],
       fileName: (format) => `ray.${format}.js`,
     },
