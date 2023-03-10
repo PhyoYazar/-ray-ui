@@ -15,3 +15,5 @@ const App = () => {
 };
 
 export default App;
+
+// "build": "concurrently \"yarn build:css\" \"tsc && vite build\"",
