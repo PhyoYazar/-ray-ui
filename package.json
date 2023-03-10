@@ -1,7 +1,7 @@
 {
   "name": "ray-joe",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "ray react component ui",
   "license": "MIT",
