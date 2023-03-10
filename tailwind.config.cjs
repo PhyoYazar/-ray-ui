@@ -6,7 +6,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     // "./src/**/*.mdx",
-    // "./src/safelist.txt",
+    "./src/safelist.txt",
   ],
 
   theme: {
@@ -342,22 +342,22 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
-    // require("tailwind-safelist-generator")({
-    //   path: "src/safelist.txt",
-    //   patterns: [
-    //     "fill-{colors}",
-    //     "bg-{colors}",
-    //     "hover:bg-{colors}",
-    //     "text-{colors}",
-    //     "hover:text-{colors}",
-    //     "border-{colors}",
-    //     "outline-{colors}",
-    //     "ring-{colors}",
-    //     "focus-visible:outline-{colors}",
-    //     "focus-visible:ring-{colors}",
-    //     // "border-{borderWidth}",
-    //     // "{screens}:gap-{gap}",
-    //   ],
-    // }),
+    require("tailwind-safelist-generator")({
+      path: "src/safelist.txt",
+      patterns: [
+        "fill-{colors}",
+        "bg-{colors}",
+        "hover:bg-{colors}",
+        "text-{colors}",
+        "hover:text-{colors}",
+        "border-{colors}",
+        "outline-{colors}",
+        "ring-{colors}",
+        "focus-visible:outline-{colors}",
+        "focus-visible:ring-{colors}",
+        // "border-{borderWidth}",
+        // "{screens}:gap-{gap}",
+      ],
+    }),
   ],
 };
