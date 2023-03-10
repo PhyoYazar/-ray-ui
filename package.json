@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.1.1",
   "type": "module",
-  "description": "A simple react component",
+  "description": "ray react component ui",
   "license": "MIT",
   "keywords": [],
   "main": "dist/ray.umd.js",
@@ -26,7 +26,7 @@
   "scripts": {
     "dev": "vite",
     "build": "concurrently \"yarn build:css\" \"tsc && vite build\"",
-    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/style.css",
+    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/index.css",
     "preview": "vite preview"
   },
   "peerDependencies": {
