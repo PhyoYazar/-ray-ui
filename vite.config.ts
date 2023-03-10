@@ -25,7 +25,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src", "lib.ts"),
-      name: "@ray/ui",
+      name: "@ray-j/ui",
       formats: ["es", "umd"],
       fileName: (format) => `ray.${format}.js`,
     },
